@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyram's Kitchen</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Ensure the path is correct -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/cartblack.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/cartblack-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/cartblack-touch-icon-114x114.jpg">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo" id="logo">
+            <img src="images/logo/E.png" alt="Eyram's Kitchen Logo">
+            <div class="logoheading">
+                <a href="#">EYRAM'S KITCHEN.</a>
+            </div>
+        </div>
+        <nav class="nav"> <!-- Use the nav element for navigation -->
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="dishes.html">Dishes</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="chefs.html">Chefs</a></li>
+            </ul>
+        </nav>
+        <a href="#"><i class="fas fa-bars" id="iconbar"></i></a> <!-- Use a valid link -->
+        <div class="booktable">
+            <a href="book.html">Book Table</a> <!-- Ensure the path is correct -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section>
+        <div class="hero-section">
+            <div class="swiper-container hero-container">
+                <div class="swiper-wrapper container-holder">
+                    <!-- Slider 1 -->
+                    <div class="swiper-slide slide">
+                        <div class="hero-content">
+                            <h3>Irresistible Flavors. Skilled Chefs. Lasting Memories<span>!</span></h3>
+                            <h1>Where Every Meal Feels Like Home.</h1>
+                            <p>Experience<span> The Heart of Home Cooking</span> in Every Dish!</p>
+                            <div class="btn">
+                                <a href="chefs.html"><i class="fas fa-phone-alt"></i> Call Waiter</a> 
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="images/chefs/cook chef.png" alt="Chef Cooking">
+                        </div>
+                    </div>
+
+                    <!-- Slider 2 -->
+                    <div class="swiper-slide slide">
+                        <div class="hero-content">
+                            <h3>Taste the Joy, Live the Flavor<span>!</span></h3>
+                            <h1>Don't Wait—Order Your Meal Now!</h1>
+                            <p>Get<span> 20%</span> on First Order</p>
+                            <div class="btn">
+                                <a href="dishes.html">Order Now</a>   
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="images/chefs/hands chef.png" alt="Hands Preparing Food">
+                        </div>
+                    </div>
+
+                    <!-- Slider 3 -->
+                    <div class="swiper-slide slide">
+                        <div class="hero-content">
+                            <h3>Quick and Reliable Delivery<span>!</span></h3>
+                            <h1>We Bring Your Favorites Right to You!</h1>
+                            <p>Claim Your<span> Free First Order</span> Today!</p>
+                            <div class="btn">
+                                <a href="#"><i class="fas fa-phone-alt"></i> Call Us</a>     
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Go to Top Button -->
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".hero-container", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+        });
+    </script>
+    <footer class="footer">
+        <div class="inside-footer">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Dishes.html">Dishes</a></li>
+                    <li><a href="Chefs.html">Chefs</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p>&copy; 2025 Eyram's Kitchen. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
